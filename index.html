@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="chat-container"></div>
+
+  <div id="input-container">
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button id="send-button" onclick="sendMessage()">Send</button>
+  </div>
+  <img src="image.jpg" alt="User Image" class="user-image">
+
+  <!-- Information about Abstraction -->
+  <div id="abstraction-info">
+    <h2>Abstraction in Cryptographic Operations</h2>
+    <p>
+      Abstraction plays a crucial role in hiding the low-level details of cryptographic operations
+      and providing a simplified interface for users. In a similar way, this chat application abstracts
+      away the complexities of message encryption and decryption, allowing users to interact with a
+      straightforward interface.
+    </p>
+    <p>
+      The encryption process involves secure key exchange, symmetric encryption, initialization vectors,
+      and other cryptographic details. Abstraction ensures that users only need to focus on sending
+      and receiving messages without delving into the intricate workings of the underlying security measures.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

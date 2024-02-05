@@ -49,4 +49,7 @@ body {
     margin-right: 0; /* Remove right margin for user image on small screens */
     margin-bottom: 10px; /* Add bottom margin for better spacing on small screens */
   }
+   .message-content {
+    font-size: 14px;
+  }
 }

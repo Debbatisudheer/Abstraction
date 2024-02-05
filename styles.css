@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#chat-container {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 40px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2%; /* Adjust the margin-bottom percentage to add space between chat and input */
+}
+
+#input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 20px; /* Adjust the margin between individual chat messages */
+}
+
+.user-image {
+  width: 600px; /* Adjust the width of the user image */
+  height: 700px;/* Adjust the height of the user image */
+  margin-right: -70px; /* Adjust the margin between the image and message content */
+}
+
+.message-content {
+  flex-grow: 1; /* Allow the message content to take up the available space */
+}
+/* Media Query for Mobile Screens */
+@media only screen and (max-width: 600px) {
+  #input-container {
+    flex-direction: column; /* Stack input elements vertically on small screens */
+  }
+
+  .chat-message {
+    flex-direction: column; /* Stack chat messages vertically on small screens */
+  }
+
+  .user-image {
+    margin-right: 0; /* Remove right margin for user image on small screens */
+    margin-bottom: 10px; /* Add bottom margin for better spacing on small screens */
+  }
+}

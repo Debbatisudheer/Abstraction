@@ -10,10 +10,12 @@
   <div id="chat-container"></div>
 
   <div id="input-container">
-    <input type="text" id="message-input" placeholder="Type a message...">
+    <input type="text" id="message-input" placeholder="Type 'Hi Sudheer '">
     <button id="send-button" onclick="sendMessage()">Send</button>
   </div>
-  <img src="image.jpg" alt="User Image" class="user-image">
+  <img src="image2.png" alt="User Image" class="user-image">
+  <p>Between you and the bot, there is an abstraction called encryption and Decryption, so there is no need to worry about its implementation.</p>
+   <p>For Cryptography code, you can <a href="https://github.com/Debbatisudheer/Abstraction/blob/master/abstraction.py">click here</a>.</p>
 
   <!-- Information about Abstraction -->
   <div id="abstraction-info">
@@ -29,6 +31,37 @@
       and other cryptographic details. Abstraction ensures that users only need to focus on sending
       and receiving messages without delving into the intricate workings of the underlying security measures.
     </p>
+
+      <p>Password Derivation Function (PBKDF2):</p>
+     <p> Abstraction: The use of the PBKDF2HMAC function abstracts the process of deriving a key from the user's password.</p>
+      Users interact with a simple function call, specifying the password and obtaining the derived key.</p>
+      <p>Simple Explanation: Imagine you have a password, and you want to turn it into a secret key for encryption.
+         The PBKDF2HMAC function is like a magic tool that takes your password and converts it into a secure key
+        without you needing to worry about the technical details.</p>
+      <p>Cipher and Encryption/Decryption:</p>
+      <p>Abstraction: The Cipher class, along with algorithms and modes, abstracts the complexities of implementing cryptographic ciphers.
+        Users interact with a simplified API for encryption and decryption without needing to deal with the intricate details of block cipher modes,
+        padding, and other cryptographic considerations.</p>
+      <p>Simple Explanation: Now, let's say you want to lock and unlock a message with a secret code.
+    The Cipher class and related stuff handle the locking and unlocking process for you. You don't have to figure out how to do it; you just say, "lock" or "unlock."</p>
+      <p>Initialization Vector (IV) and Authentication Tag:</p>
+      <p>Abstraction: The library handles the creation and management of the initialization vector (IV) and the authentication tag for the AES-GCM mode.
+    Users do not need to implement these components manually.</p>
+      <p>Simple Explanation: When you lock and unlock your message, there are additional secret things called the "IV" and "tag" that help keep everything secure.
+    The library takes care of creating and using these secret things, and you don't have to worry about what they are exactly.</p>
+      <p>Error Handling and Security Considerations:</p>
+      <p>Abstraction: The library includes error handling and security features that are abstracted from the user.
+    For example, the library manages the authentication tag in a way that helps ensure the integrity of the ciphertext.<p>
+      <p>In summary, abstraction is evident in the use of high-level cryptographic primitives provided by the cryptography library.
+    Users interact with a simplified interface, allowing them to perform secure encryption and decryption operations without
+    dealing with the underlying complexities of cryptographic algorithms and protocols. This abstraction enhances the security of the implementation
+    and reduces the risk of errors in cryptographic operations.</p>
+      <p>Simple Explanation: Sometimes, things might not go as planned, or there could be bad guys trying to mess with your locked message.
+    The library has built-in protections to handle these situations and keep your messages safe without you having to be a security expert.</p>
+      <p>In simple terms, the cryptography library provides tools (functions and classes) that do complicated security tasks for you.
+    You just tell them what you want (like "lock this message" or "unlock this message"), and the library takes care of the rest,
+    making sure your messages stay safe and sound.</p>
+
   </div>
 
   <script src="script.js"></script>

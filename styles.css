@@ -30,6 +30,7 @@ body {
   width: 600px; /* Adjust the width of the user image */
   height: 700px;/* Adjust the height of the user image */
   margin-right: -70px; /* Adjust the margin between the image and message content */
+  margin-left: -70px;
 }
 
 .message-content {

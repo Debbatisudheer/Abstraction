@@ -36,6 +36,12 @@ body {
 .message-content {
   flex-grow: 1; /* Allow the message content to take up the available space */
 }
+ footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
 /* Media Query for Mobile Screens */
 @media only screen and (max-width: 600px) {
   #input-container {

@@ -47,7 +47,10 @@ body {
   }
 
   .user-image {
+    width: 100%; /* Adjust width to 100% for smaller screens */
+    height: auto; /* Allow the height to adjust proportionally */
     margin-right: 0; /* Remove right margin for user image on small screens */
+    margin-left: 0;
     margin-bottom: 10px; /* Add bottom margin for better spacing on small screens */
   }
    .message-content {
